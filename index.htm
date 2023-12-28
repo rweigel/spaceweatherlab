@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Space Weather Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/swl.ico" />
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h1 {font-weight: bold;}
+  h2 {font-weight: bold;}
+  .mySlides {
+    display: none;
+    padding: 1em;
+  }
+  .mySlides > img {
+    width: 100%;
+    max-width: 100vw;
+    padding-bottom: 1em;
+  }
+</style>
+
+<!--Based on https://www.w3schools.com/w3css/tryw3css_templates_band.htm-->
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <img src="images/MasonM_4C.png" height="40px" style="float:left;padding:5px"/>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#faculty" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Faculty</a>
+    <a href="#students" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Students</a>
+    <a href="#resources" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resources</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#faculty" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Faculty</a>
+  <a href="#students" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Students</a>
+  <a href="#resources" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Resources</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <h1 style="text-align:center">The Space Weather Lab at George Mason University</h1>
+  </div>
+
+  <!-- Automatic Slideshow Images -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <div class="mySlides w3-display-container w3-center">
+      <img src="images/sunearth-fs8.png">
+      <div style="font-size: 0.5em;" class="w3-display-bottommiddle w3-container w3-hide-small">
+        <p>
+          <a href="https://svs.gsfc.nasa.gov/12901">
+            https://svs.gsfc.nasa.gov/12901
+          </a>
+        </p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/561682main_martinstojanovski-sun-orig_full.jpg">
+    <div style="font-size: 0.5em" class="w3-display-bottommiddle w3-container w3-hide-small">
+      <p>
+        <a href="https://www.nasa.gov/mission_pages/sunearth/news/next-solarstorm.html">
+          https://www.nasa.gov/mission_pages/sunearth/news/next-solarstorm.html
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/719590main_Grid-Sun-orig_full-fs8.png">
+    <div style="font-size: 0.5em"class="w3-display-bottommiddle w3-container w3-hide-small">
+      <p>
+        <a href="https://www.nasa.gov/mission_pages/sunearth/news/light-wavelengths.html">
+          https://www.nasa.gov/mission_pages/sunearth/news/light-wavelengths.html
+        </a>
+    </p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/ionosphere_infographic-fs8.png">
+    <div style="font-size: 0.5em" class="w3-display-bottommiddle w3-container w3-hide-small">
+      <p>
+        <a href="https://www.nasa.gov/feature/goddard/2016/revolutions-in-understanding-the-ionosphere-earth-s-interface-to-space">
+          https://www.nasa.gov/feature/goddard/2016/revolutions-in-understanding-the-ionosphere-earth-s-interface-to-space
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/wsa-enlil-fs8.png">
+    <div style="font-size: 0.5em" class="w3-display-bottommiddle w3-container w3-hide-small">
+      <p>
+        <a href="https://ccmc.gsfc.nasa.gov/models/modelinfo.php?model=CORHEL/MAS/WSA/ENLIL/">https://ccmc.gsfc.nasa.gov/models/modelinfo.php?model=CORHEL/MAS/WSA/ENLIL/</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="about">
+  <h2 class="w3-wide">About</h2>
+    <p class="w3-justify">
+      The Space Weather Lab at George Mason University was formally established in October 2006. The faculty in the lab are mainly affiliated with the <a href="http://physics.gmu.edu">Department of Physics and Astronomy</a>. We emphasize multi-disciplinary science that crosses traditional department boundaries. Students in our space weather program will develop a deep understanding of the Sun, the heliosphere, geospace, and their interactions. 
+    </p>
+    <p class="w3-justify">
+      Space weather research addresses the physics of the connected Sun-Earth system. It specifies and predicts the physical conditions in the space that adversely affect the safety of manned space missions and technological systems such as satellites, electronic power grids, communication and navigation systems. It is supported by major national programs, including the National Space Weather Program (NSWP), the Living With a Star Program (LWS), and a variety of NASA, NSF, DOD and NOAA offices. There is also an International LWS program that involves more than 20 international space agencies.
+    </p>
+    <p class="w3-justify">
+      If you are interested in pursuing a graduate degree and would like to do research on Space Weather problems as an undergraduate or graduate student, we encourage you to contact any of the faculty.
+    </p>
+    <p class="w3-justify">
+     <a href="docs/GMU_Space_Weather_Lab_Brochure_2023.pdf">Brochure</a>
+    </p>
+    <p class="w3-justify">
+      Director: <a href="mailto:rweigel@gmu.edu"> <b>Bob Weigel</b> </a>
+    </p>
+  </div>
+
+  <!-- Faculty section -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="faculty">
+    <h2 class="w3-wide">Faculty</h2>
+        <p class="w3-justify">
+          <a href="https://science.gsfc.nasa.gov/sed/bio/dieter.bilitza-1"><b>Dieter Bilitza</b></a>  dbilitza@gmu.edu - Research Professor; PhD, Albert-Ludwigs University, Freiburg, Germany, 1984. Ionospheric physics, thermodynamics, and solar-terrestrial physics with a strong background in statistical modeling of ionospheric parameters. The principal author of the International Reference Ionosphere (IRI) a model widely used for applications in science, engineering, and education, and the recognized international standard for ionospheric parameters.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/james-chen-a68b6a14"><b>Jim Chen</b></a> - Affiliate Research Professor; PhD, Cornell University, 1979. Plasma physics, solar physics.
+        </p> 
+        <p class="w3-justify">
+          <a href="https://science.gsfc.nasa.gov/sed/bio/james.a.klimchuk"><b>James Klimchuk</b></a> - Affiliate Research Professor; PhD, University of Colorado, 1985. Solar physics, MHD physics.
+        </p>
+        <p class="w3-justify">
+          <b>John Mariska</b> - Research Professor; PhD, Harvard University, 1977. Observational and theoretical study of the structure, dynamics, and radiating properties of the solar transition region and corona.
+        </p>
+        <p class="w3-justify">
+          <a href="meier/index.html"><b>Bob Meier</b></a> - Research Professor; PhD, University of Pittsburgh, 1966. Upper atmospheric and ionospheric physics, chemistry, and dynamics with special emphasis on development of techniques for remote sensing of composition and temperature.  
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.researchgate.net/profile/Dusan_Odstrcil2"><b>Dusan Odstrcil</b></a> - Research Professor; PhD, Comenius University, 1992. 3-D magnetohydrodynamic simulations of dynamic phenomena in the solar wind including corotating interaction regions, coronal mass ejecta, and interplanetary shocks. 
+        </p>
+          <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/larrypaxton/"> <b>Larry Paxton</b> </a> - Affiliate Research Professor; PhD, University of Colorado, 1983.  Ionospheric physics, space weather, and climate change.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/dean-pesnell-405a2373/"><b>Dean Pesnell</b></a> - Affiliate Research Professor; PhD, University of Florida, 1983. Atmospheric oscillations, Hydrodynamics of real gases, nonlinear effects, computational physics, numerical analysis, Fourier analysis of data, Quantum mechanics, collision cross sections, equation of state, and opacity, Radial and nonradial stellar pulsations, and Stellar structure.
+        </p>
+        <p class="w3-justify">
+          <a href="poland/index.html"> <b>Art Poland</b></a> apoland@gmu.edu - Research Professor; PhD, Indiana University, 1969. Energy transport processes in the solar atmosphere involving radiative transfer, hydrodynamic modeling, and the use of observational data (especially spacecraft data) to provide boundary conditions and predicted observables.  
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.researchgate.net/profile/John-Shebalin"><b>John Shebalin</b></a> - Affiliate Research Professor; PhD, College of William &amp; Mary 1982, Fundamental aspects of magnetohydrodynamic turbulence; coherent structure and self-organization in turbulent plasmas; planetary and stellar dynamos; charged particle motion and trapping in planetary magnetic fields.
+        </p>
+        <p class="w3-justify"> 
+          <a href="https://www.physics.gmu.edu/people/michael-summers/"><b>Michael Summers</b></a> msummers@gmu.edu - Professor; PhD, California Institute of Technology, 1985; Structure and evolution of planetary atmospheres. 
+        </p>
+        <p class="w3-justify">
+          <a href="http://bobweigel.info/"><b>Bob Weigel</b></a> rweigel@gmu.edu - Associate Professor; Director of Space Weather Lab; PhD, University of Texas, Austin, 2000. Magnetospheric physics and geomagnetism, solar wind/magnetosphere/ionosphere coupling.
+        </p>
+        <p class="w3-justify">
+          <a href="http://www.spaceweather.gmu.edu/eyigit/"><b>Erdal Yiğit</b></a> eyigit@gmu.edu - Associate Professor; PhD, University College London, 2009. Mars, gravity waves, geomagnetic storms, and thermosphere-ionosphere physics.
+        </p>
+        <p class="w3-justify">
+          <a href="http://solar.gmu.edu/index_Zhang.html"><b>Jie Zhang</b></a> jzhang7@gmu.edu - Professor; PhD, University of Maryland, 1999. Solar physics and space weather research. Initiation processes of flares and coronal mass ejections, kinematic and dynamic properties of CMEs, Interplanetary CMEs and solar wind disturbances, drivers of geomagnetic storms, long-term and large scale variation of solar atmosphere, image processing methods, auto-detection of transient events, and data assimilation.  
+        </p>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="students">
+    <h2 class="w3-wide">Students</h2>
+      <h3>Graduate</h3>
+        <p class="w3-justify">
+          Alvarez, Alejandro, PhD, In Progress, Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          Baldwin, Katherine, MS, 2011, "Kinematic Characterization of In/Out Pair of Ejections as Seen in SECCHI Images"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/bandarusandya/">Bandaru, Sandya</a>, MS in IT, 2008, Project Advisor: Bob Weigel, Software development for the <a href="http://virbo.org/">Virtual Radiation Belt Observatory</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/w-randy-b-b904a16/">Bell, Randy</a>, MS, 2009, Advisor: Bob Weigel.
+        </p>
+        <p class="w3-justify">
+          Briggs, Brian, MS, 2012, "Determination of Sub-photosphere Solar Active Region 3D Magnetic Field Structure From Emergence Observations"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/stevenbrownjr/">Brown, Steven</a>, PhD, 2018, "Improved Description of the Annual Anomaly by the International Reference Ionosphere"; Thesis Advisor: Dieter Bilitza.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/dr-karl-battams/">Battams, Karl</a>, PhD, 2018, "Reduction and Synopses of Multi-Scale Time Series with Applications to Massive Solar Data"; Thesis Advisor: Bob Weigel.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/georgios-chintzoglou/">Chintzoglou, Georgios</a>, PhD, 2016, "A Study of Solar Magnetic Fields Below the Surface, at the Surface, aand in the Solar Atmosphere - Understanding the Cause of Major Solar Activity"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/robin-colaninno-aa3208b4/">Colaninno, Robin</a>, PhD, 2012, "Investigation of the Forces that Govern the Three-Dimensional Propagation and Expansion of Coronal Mass Ejections from Sun to Earth"; Thesis Advisor: Angelos Vourlidas.
+        </p>
+        <p class="w3-justify">
+          Cox, Bradley, MS, 2020, Advisor: Jie Zhang
+        </p> 
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/brian-curtis-ph-d-68276899/">Curtis, Brian</a>, PhD, 2014, "Validation of Magnetospheric Magnetohydrodynamic Models"; Thesis Advisor: Bob Weigel.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.researchgate.net/profile/Patrick-Dandenault">Dandenault, Patrick</a>, PhD, 2017, "Characterization of Thermospheric Neutral Winds Using Empirical Modeling and Observational Validation"; Thesis Advisor: Phil Richards.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/suman-dhakal-153985a7/">Dhakal, Suman</a>, PhD, 2021, "Causes of Solar Eruptions: A Comparative Study of Super-Active Active and Low-Active Active Regions"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.researchgate.net/profile/Rebekah-Evans">Evans, Rebekah Minnel</a>, PhD, 2011, "The Evolution of Modeled Coronal Mass Ejecta in the Lower Corona: Effects of the Heating and Acceleration of the Solar Wind"; Thesis Advisor: Merav Opher.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/gary-forjan-715b8099/">Forjan, Gary</a>, PhD, 2009, "Two-dimensional Magnetohydrodynamic Simulation of Impulsively Heated Solar Flux Tubes with Magnetic Field-Aligned Thermal Conduction"; Thesis Advisor: Art Poland.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/christinamhenderson0203/">Henderson, Christina</a>, MS, 2007, Advisor: Art Poland
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.researchgate.net/scientific-contributions/Phillip-Hess-2052647752">Hess, Phil</a>, PhD, 2015, "Understanding the Evolution and Propagation of Coronal Mass Ejections and Associated Plasma Sheaths in Interplantary Space"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/shea-hess-webber/">Hess Webber, Shea</a>, PhD, 2016, "Coronal Holes and Solar f-mode Wave Scattering off Linear Boundaries"; Thesis Advisor: Dean Pesnell.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/adam-jacobs-a8833449/">Jacobs, Adam</a>, PhD, 2019, "Atomospheric Physics and Chemistry of Pluto's Haze Layers"; Thesis Advisor: Mike Summers.
+        </p>
+        <p class="w3-justify">
+          Kunkel, Valbona, PhD, 2012, "Evolution of Coronal Mass Ejections From the Sun to 1 AU: Properties of Magnetic Field and A Modified Flux Rope Model"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/nishu-karna-55a436116/">Karna, Nishu</a>, PhD, 2016, "A comprehensive study of cavities on the sun: Structure, formation, and evolution"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          Kercher, Andrew, PhD, 2014, "Computational Methods for Ideal Magnetohydrodynamics"; Thesis Advisor: Bob Weigel.
+        </p>
+        <p class="w3-justify">
+          McDonald, Sarah, PhD, 2007, "Day-to-day and longitudinal variability of the nighttime low latitude terrestrial ionosphere"; Thesis Advisor: Mike Summers.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/rachel-n-10524a167/">Nep, Rachel</a>, MS, 2013, Advisor: Bob Weigel
+        </p>
+        <p class="w3-justify">
+          Nikou, Eleni, PhD, Advisor: Jie Zhang, In progress.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/oscar-olmedo-816aa86b/">Olmedo, Oscar</a>, PhD, 2010, "A Study of the Initiation Process of Coronal Mass Ejections and the Tool for Their Auto-Detection"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/peter-panka-526711139/">Panka, Peter</a>, PhD, 2017, Thesis Advisor: Erdal Yiğit, "New non-LTE Mdoel of OH and CO<sub>2</sub> Emission in the Mesosphere-Lower Thermosphere and its Application to Retrieving Nighttime Parameters."
+        </p>
+        <p class="w3-justify">
+          Poomvises, Watanachak (Yod), PhD, 2010, "Kinematic and Morphological Evolution and Dynamics of Coronal Mass Ejections in Interplanetary Space"; Thesis Advisor: Jie Zhang.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/grant-k-stephens/">Stephens, Grant</a>, PhD, In progress, "Revealing the Global Morphology of the Magnetosphere During Storms and Substorms using Data-Mining-Driven Empirical Magnetic Field Models", Advisor, Bob Weigel
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/william-rowland-4b2551129/">Rowland, William</a>, MS, 2011, Advisor, Bob Weigel
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/saxenaprabal/">Saxena, Prabal</a>, PhD, 2015, "Extreme Physical Phenomena Associated with Close-In Solid Exoplanets: Models and Consequences"; Thesis Advisor: Mike Summers.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/nathanielstickley/">Stickley, Nathaniel</a>, MS 2008, Advisor: Bob Weigel
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/victoir-veibell-16b9052b/">Veibell, Victoir</a>, PhD, 2016, "Statistical Modeling of Earth's plasmasphere"; Thesis Advisor: Bob Weigel.
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/eric-winter-95291934/">Winter, Eric</a>, PhD, In progress, "Applications of Neural Networks to Solve the Differential Equations of Magnetohydrodynamics"; Advisor: Bob Weigel.
+        </p>
+
+      <h3>Undergraduate</h3>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/wesley-toler-0181755a/">Toler, Wesley</a>, Visualization of Atmospheric Data-Driven Models (Advisor: Bob Weigel); Intercomparison of plasmasphere models (Advisor: Dieter Bilitza)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/eringrace-drake/">Drake, ErinGrace</a>, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/brendan-gallagher-7a076415a/">Gallagher, Brendan</a>, SOHO Solar Image Analysis (Advisor: Bob Weigel)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/matthew-gayhart-bb9424114/">Gayhart, Matthew</a>, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/angel-gutarra-leon/">Gutarra-Leon, Angel</a>, Simulation of Radiation Belt Particles (Advisor: Bob Weigel)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/joseph-gorzka-iii-148970168/">Gorzka, Joseph</a>, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Lumkin, Gabe, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Marsh, Liam, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Mazzullo, Christopher, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Mejia, Jimmy, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Pil, Seung, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Quaresima, Gary, Physics, Magnetospheric Drivers of Strong Electric Field Enhancements on Earth’s Surface that Drive Geomagnetically Induced Currents (Advisor: Bob Weigel)
+        </p>
+        <p class="w3-justify">
+          Quiroz, Darwin, Intercomparison of Plasmasphere Models (Advisors: Dieter Bilitza and Bob Weigel)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/matthew-rawls-123098107/">Rawls, Matt</a>, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Tran Tran, Solar physics (Advisor: Art Poland)
+        </p>
+        <p class="w3-justify">
+          Yim, Pisal, Solar physics (Advisor: Art Poland)
+        </p>
+
+      <h3>High School</h3>
+        <p class="w3-justify">
+          Rao, S. - Independent Study on The Analysis of Space Weather Forecasting Contest Data (Advisor: Bob Weigel)
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.linkedin.com/in/shijitdasgupta/">Dasgupta, S</a>. - Independent Study on Low-Cost Magnetometer Experiments (Advisor: Bob Weigel)
+        </p>
+  </div>
+
+  <!-- Resources section -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="resources">
+    <h2 class="w3-wide">Resources</h2>
+        <p class="w3-justify">
+          <a href="https://iopscience.iop.org/book/978-0-7503-1372-8.pdf">An Introduction to Space Weather by M. Hapgood</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.amazon.com/Introduction-Space-Weather-Mark-Moldwin/dp/0521711126/">Introduction to Space Weather by M. Moldwin</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.amazon.com/Space-Physics-Introduction-Heliosphere-Magnetospheres/dp/3540206175/">Space Physics: An Introduction to Plasmas and Particles in the Heliosphere and Magnetospheres by M. Kallenrode</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.amazon.com/Introduction-Physics-Cambridge-Atmospheric-Science/dp/0521457149/">Introduction to Space Physics by M. Kivelson and C. Russell</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://connect.agu.org/spa/resources/general-resources">American Geophysical Union's Space Physics and Aeronomy Resources</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://www.swpc.noaa.gov/">NOAA's Space Weather Prediction Center</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://ccmc.gsfc.nasa.gov/">NASA's Community Coordinated Modeling Center</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://ccmc.gsfc.nasa.gov/">The European Space Agency's Space Weather Service Network</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://spaceweather.sansa.org.za/">South African National Space Agency</a>
+        </p>
+        <p class="w3-justify">
+          <a href="https://spaceweather.rra.go.kr/introduce/about">Korean Space Weather Agency</a>
+        </p>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contact</h2>
+    <div class="w3-row w3-padding-16">
+      <div class="m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Bob Weigel, 4400 University Drive, 3F3, Fairfax, VA 22030<br>
+        <i class="fa fa-phone" style="width:30px"></i>Phone: (703) 993-1361<br>
+        <i class="fa fa-envelope" style="width:30px"></i>Email: rweigel@gmu.edu<br>
+      </div>
+    </div>
+  </div>
+<!-- End Page Content -->
+</div>
+
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
