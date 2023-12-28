@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <!-- Designed by CAS Web Development http://cas.gmu.edu/web/ -->
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+      <title>Erdal Yigit - Space Weather Group - Mason</title>
+      <link href="index_files/math.css" rel="stylesheet" type="text/css">
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Erdal Yigit's Space weather website"/>
+	<meta name="keywords" content="Erdal Yigit, gravity waves, Earth's atmosphere, models, mars, planetary science"/>
+	<meta name="author" content="Erdal Yigit"/>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+	<!--This is needed for latex --> 
+	<script type="text/x-mathjax-config">  
+	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+
+	<script type="text/javascript" async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+       <script type="text/javascript">
+       onload = function(){
+       document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0] +" by Erdal Yi&#287it";
+	}	
+	</script>
+
+	<script>
+	  function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /*loop through a collection of all HTML elements:*/
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+			  elmnt = z[i];
+			  /*search for elements with a certain atrribute:*/
+			  file = elmnt.getAttribute("w3-include-html");
+			  if (file) {
+			  /*make an HTTP request using the attribute value as the file name:*/
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /*remove the attribute, and call this function once more:*/
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			  }
+			  }      
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /*exit the function:*/
+			  return;
+			  }
+			  }
+			  };
+	  </script>
+
+
+<script language="Javascript" type="text/javascript">
+  var mywords = "Firefox";
+</script>
+<!-- If you want to reference the variable:
+     If you ask me what my favourite browser is, ill answer:<br>
+     <script>document.write(mywords);</script>
+-->
+
+<style>
+
+  li{
+      margin: 1.7px 0;
+  }
+
+  h4 {
+  border-bottom: 6px solid red;
+  background-color: lightgrey;
+  margin: 2px 2px;
+  padding: 5px 5px;
+  }
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+ margin: 0;
+ padding: 0;
+ width: 150px;
+ background-color: #f6f6f6;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+}
+
+.sidebar a {
+ display: block;
+ <!-- EY: font color -->
+ color: #2196F3;
+ padding: 10px;
+ text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;    
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+    </head>
+    
+<body>
+
+  <center>
+    <table style="width: 1000px;;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+	<tr>
+	  <td height="100%" align=center valign="top">          
+	    <table style="width: 900px; margin-left: 68px;" border="0" 
+		   cellpadding="0" cellspacing="0" width="100%">
+	      <tbody>
+		<tr>
+		  <td style="width: 958px;" bgcolor="#ffcc33">
+		    <a href="#content">
+		      <img src="index_files/spacer.gif" alt="" border="0" height="3" width="1"> 
+		      </a>
+		    </td>
+		  </tr>
+		</tbody>
+		
+	      </table>
+	      <!-- This is the picture at the top of the page-->
+	      <img src="Images/earth5.png" alt="" height="60" width="960">
+		<br>
+		  <table align="center" border="0" cellpadding="0" cellspacing="0" width="680">
+		    <tbody>
+		      <tr>
+			<td align="right"  valign="top" width="140">
+			  <!--<a href="http://www.gmu.edu/"><img src="Images/logo-gmu.jpg" alt="George Mason
+			      University" border="0" height="97" width="140"></a> -->
+			  
+			  <br>
+			    <img src="Images/gmu.png" alt="" height="110" width="150">      
+			      <table style="width: 144px; height: 220px;" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+				  <tr>
+				    <!--
+					<td class="navLeft"><a href="http://aurora.gmu.edu/spaceweather/index.php/Main_Page#People">People</a></td>
+-->
+<div class="sidebar">
+  <a href="#biosketch">Biosketch</a>
+  <a href="#web">Web Information</a>
+  <a href="#education">Education</a>
+  <a href="#publication">Publications</a>
+  <a href="research.html" target="_blank" >Research</a>
+  <a href="teaching.html" target="_blank" >Teaching</a>
+
+<!--  <a href="#services">Services</a>
+-->
+</div>
+
+
+				  </tbody>
+				</table>
+			      </td>
+			      <td valign="top" width="520">
+				
+				<!-- EY: width specifies the width of the webpage -->
+				<table style="margin-left: 18px; width: 840px;" border="0" cellpadding="0" cellspacing="0">
+				  
+              <tbody>
+                <tr>
+                  <td style="width: 750px;" valign="top">
+
+                   <font color="DodgerBlue"> <big><big><big><span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">Erdal Yi&#287;it, PhD</span> </font><br>
+                  </big></big></big>
+<hr />
+
+                  <normal><span style="font-family: Helvetica,sans-serif; font-size: 14px;">
+
+<div class="position content-only standalone">
+  <h3><strong>Associate Professor of Physics<br/>
+      Department of Physics and Astronomy, Space Weather Lab, George Mason University
+    </strong>
+  </h3>
+<hr />
+
+<!-- <font color="red"> <big> <b>This website is under currently construction!</b> </big> </font><br><br> -->
+
+<!-- <a href="http://yigit.onair.cc/2015/09/15/erdal-yigit-phd/img_9130fb2/" rel="attachment wp-att-803"> -->
+<center><img 
+     class="wp-image-803 size-medium alignleft center"
+     src="./Images/erdal.jpg" ALIGN="left" HSPACE="25" VSPACE="20"
+     alt="" 
+     width="277.2" 
+     height="315"/>
+</center>
+</a>
+<br>
+
+
+<h2>Introduction </h2> 
+
+Dr. Yi&#287it's <a href="research.html" target="_blank" >research </a> focuses on 
+<ul> 
+  <li> Whole atmosphere coupling</li>
+  <li> Gravity waves in planetary atmospheres</li>
+  <li> General circulation modeling </li>
+  <li> Dynamics of planetary atmospheres</li>
+  <li> Space weather        </li>
+</ul>
+
+</div>
+
+
+
+
+
+<a name="biosketch">
+<h2>Biosketch</h2> 
+</a>
+Erdal Yi&#287it received his Ph.D. at the University College London, UK, in 2009 in physics. In March 2009, he
+moved to the USA to work at the University of Michigan's Atmospheric Oceanic and Space Sciences Laboratory as a
+Postdoctoral Researcher. In 2012, he moved to California for another Postdoctoral position at UC Berkeley's Space
+Sciences Laboratory, where he has later been promoted to an Assistant Research Physicist position that he kept till
+August 2013. In September 2013, he joined George Mason University's <a href="https://www.physics.gmu.edu/"
+target="_blank" > Physics and Astronomy Department</a> as a tenure-track faculty member.  He has been granted
+tenure in 2018. His research interests cover topics from atmospheric, space and planetary sciences, in particular,
+global modeling of and internal wave effects in planetary atmospheres, such as, Earth and Mars. He is the developer
+of the first whole atmosphere gravity wave parameterization suitable for general circulation models of planetary
+atmospheres. He is the recipient of the 2016 Zeldovich Medal jointly presented by COSPAR and the Russian Academy of
+Sciences for his significant contributions to the study of coupling between the lower and upper atmospheres on
+Earth and Mars by gravity waves. He is the sole author of the Springer's two-volume monograph series on
+"Atmospheric and Space Sciences" one on
+<a href="https://www.springer.com/de/book/9783319215808" target=_"blank">Neutral atmospheres</a> and the second on <a href="https://www.springer.com/us/book/9783319620053"
+target="_blank"> Ionospheres and Plasma Environments</a>. He lives in Fairfax, Virginia (VA), USA.
+
+<a name="web">
+<h2>Web Information</h2> </a>
+
+<h4><span class="email full-content"><strong>Email</strong>: eyigit[at]gmu[dot]edu</span></h4>
+<h4><strong>Facebook Page :</strong> <a href="https://www.facebook.com/erdalyigit80/">https://www.facebook.com/erdalyigit80/</a></h4>
+<h4><strong>Twitter:</strong> <a href="https://twitter.com/ProfErdalYigit">https://twitter.com/ProfErdalYigit</a></h4>
+<h4><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Erdal_Yigit2">https://www.researchgate.net/profile/Erdal_Yigit2</a></h4>
+<h4><b> Erdal@Mason</b>: <a href="https://www.physics.gmu.edu/people/erdal-yigit/" target="_blank" > www.physics.gmu.edu/people/erdal-yigit/</a></h4>
+<a style="vertical-align: top;" href="https://orcid.org/0000-0002-2819-2521" target="orcid.widget"><img style="width: 1em; margin-right: .5em;" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon" />orcid.org/0000-0002-2819-2521</a>
+
+
+
+<a name="education">
+<h2>Education</h2> </a>
+<ul>
+  <li>Doctor of Philosophy (Ph.D.), <a href="https://www.ucl.ac.uk/">University College London</a>, 2009.
+<ul>
+  <li>Ph.D. thesis: <em>Modelling Atmospheric Vertical Coupling: Role of Gravity Wave Dissipation in the Upper Atmosphere</em></li>
+</ul>
+</li>
+  <li>Bachelor of Science (BS), <a href="https://www.jacobs-university.de/">International (Jacobs) University Bremen</a>, 2004.
+<ul>
+  <li>BS. Thesis: <em>Heat Transfer in Porous Media</em></li>
+</ul>
+</li>
+</ul>
+
+<a name="publication">
+<h2>Publications</h2>
+</a>
+<!--PUBLICATIONS-->
+<!-- <hr /> -->
+<h3 id="toc10" class="toc-anchor">Summary of Peer-reviewed Publications (Quick Overview)</h3>
+<hr />
+<ul>
+  <li>46 peer-reviewed publications (42 journal articles, 1 PhD thesis, 2 books, 1 book chapter)</li>
+  <li>23 first-author peer-reviewed publications</li>
+  <li><strong><a class="external" title="[external resource] (New Window)" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=Erdal+Yigit&amp;version=1" target="_blank" rel="noopener noreferrer">NASA Astrophysics Data System</a> </strong>- 719 citations, <a class="external" title="[external resource] (New Window)" href="https://en.wikipedia.org/wiki/H-index" target="_blank" rel="noopener noreferrer"><em>h</em>-index</a> = 16.0, m-index = 1.25</li>
+  <li><a href="https://scholar.google.com/citations?user=e1ZtvyAAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> - 1046 citations,<a class="external" title="[external resource] (New Window)" href="https://en.wikipedia.org/wiki/H-index" target="_blank" rel="noopener noreferrer"><em> h</em>-index</a>= 17.0</li>
+</ul>
+
+<hr />
+
+<hr />
+
+<h3 id="toc11" class="toc-anchor">Publications -- Peer reviewed (2012-2018)</h3>
+
+<hr />
+
+<h4>2018</h4>
+<ul>
+  <div w3-include-html="publication2018.html"></div>
+  <li><strong>Yi&#287it, E.</strong> (2018), <a class="external" title="[external resource] (New Window)" href="http://www.springer.com/gp/book/9783319620053?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_blank">Atmospheric and Space Sciences: Ionospheres and Plasma Environments, Volume 2 </a>, Springer Briefs in Earth Sciences.  <a href="http://www.bookmetrix.com/detail/book/c9739da5-c751-4c3e-aecf-dea223836f97#downloads" target="_blank" rel="noopener noreferrer">Bookmetrix</a></li>
+</ul>
+
+
+<h4>2017</h4>
+<ul>
+  <div w3-include-html="publication2017.html"></div>
+</ul>
+
+<hr />
+
+<h4>2016</h4>
+<ul>
+  <li style="list-style-type: none;"></li>
+  <li>Kuroda, T., A. S. Medvedev, <strong>E. Yi&#287it</strong>, P. Hartogh (2016), <a href="http://journals.ametsoc.org/doi/abs/10.1175/JAS-D-16-0142.1">Global distribution of gravity wave sources and fields in the Martian atmosphere during equinox and solstice inferred from a high-resolution general circulation model</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sci</em></span>, 73, 4895-4909, doi:<span class="doi">10.1175/JAS-D-16-0142.1.</span></li>
+  <li><strong>Yi&#287it, E., </strong>A. S. Medvedev (2016), <a href="http://geoscienceletters.springeropen.com/articles/10.1186/s40562-016-0056-1">Role of gravity waves in vertical coupling during sudden stratospheric warmings</a>, <em><span style="text-decoration: underline;">Geosci. Lett</span>,</em> 3:27, doi: 10.1186/s40562-016-0056-1.<strong>
+</strong></li>
+  <li>Kilcik, A., A. Ozguc, <strong>E. Yi&#287it</strong>, V. Yurchyshyn, Burcin Donmez (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682616300931">Signature of a possible relationship between the maximum CME speed index and the critical Frequencies of the f1 and f2 Ionospheric Layers: Data Analysis for a Mid-Latitude Ionospheric Station during the Solar Cycles 23 and 24</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, in press.</li>
+  <li>Medvedev, A. S., H. Nakagawa, C. Mockel, <strong>E. Yi&#287it</strong>, T. Kuroda, P. Hartogh, K. Terada, N. Terada, K. Seki, N. M. Schneider, S. K. Jain, J. S. Evans, J. I. Deighan, W.  E. McClintock, D. Lo (2016), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2016GL068388/full">Comparison of the Martian thermospheric density and temperature from IUVS/MAVEN data and general circulation modeling</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, </em><cite id="grl54248-cit-0000"><span class="vol">43</span>, <span class="pageFirst">3095</span><span class="pageLast">3104</span>, doi:<a class="accessionId" title="Link to external resource: 10.1002/2016GL068388" href="http://dx.doi.org/10.1002/2016GL068388" target="_blank" rel="noopener noreferrer">10.1002/2016GL068388</a>.</cite></li>
+  <li>England, S., G. Liu, P. Withers, <strong>E. Yi&#287it</strong>, D. Lo , S. Jain, N. Schneider, J. Deighan, W. McClintock, P. Mahaffy, M. Elrod, M. Benna, B. Jakosky (2016), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2016JE004997/full">Simultaneous observations of atmospheric tides from combined in situ and remote observations at Mars from the MAVEN spacecraft</a>, <em><em><span style="text-decoration: underline;"> J. Geophys. Res. - Planets</span>, 121, </em></em>doi:10.1002/2016JE004997.</li>
+  <li><strong>Yi&#287it, E.</strong>, P. K. Knizova, K. Georgieva, W. Ward (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682616300426">A review of vertical coupling in the Atmosphere-Ionosphere system: Effects of waves, sudden stratospheric warmings, space weather, and of solar activity</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, <em>141, 1-12, </em>10.1016/j.jastp.2016.02.011.</li>
+  <li><strong>Yi&#287it, E.</strong>, H. U. Frey, M. B. Moldwin, T. J. Immel, A. J. Ridley (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682615300651">Hemispheric difference in the response of the upper atmosphere to the August 2011 geomagnetic storm: A simulation study</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, <em>141, 13-26, </em> doi: 10.1016/j.jastp.2015.10.002<span style="color: #000000;">.</span></li>
+</ul>
+
+<hr />
+
+<h4>2015</h4>
+<ul>
+  <li>Kuroda, T., A. S. Medvedev, <strong>E. Yi&#287it,</strong> P. Hartogh (2015), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL066332/full">A global view of gravity waves in the Martian atmosphere inferred from a high-resolution general circulation model</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, </em>doi:<span class="article-header__meta-info-data">10.1002/2015GL066332</span><em><span class="article-header__meta-info-data">.</span>
+</em></li>
+  <li><strong>Yi&#287it, E.</strong>, S. L. England, G. Liu, A. S. Medvedev, P. R. Mahaffy, T. Kuroda, B. M. Jakosky (2015), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL065307/full">High-altitude gravity waves in the Martian thermosphere observed by MAVEN/NGIMS and modeled by a gravity wave scheme</a>, <span style="text-decoration: underline;"><em>Geophys. Res. Lett.,</em></span><em><span class="article-header__meta-info-data"> 42, </span></em><span class="article-header__meta-info-data">do</span><span class="article-header__meta-info-data">i:0.1002/2015GL065307.</span></li>
+  <li><strong>Yi&#287it, E.</strong> (2015), <a class="external" title="[external resource] (New Window)" href="http://www.springer.com/us/book/9783319215808#" target="_blank" rel="noopener noreferrer"> Atmospheric and Space Sciences: Neutral Atmospheres, Volume 1 </a>, <span style="text-decoration: underline;">Springer Briefs in Earth Sciences</span>.</li>
+  <li><strong>Yi&#287it, E., </strong>A. S. Medvedev, P. Hartogh (2015), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL064275/full" target="_blank" rel="noopener noreferrer"> Gravity waves and high‐altitude CO2 ice cloud formation in the Martian atmosphere </a>, <em><span style="text-decoration: underline;"> Geophys. Res. Lett.</span>, 42</em>, doi:10.1002/2015GL064275.</li>
+  <li>Medvedev, A. S., F. Gonzales-Galindo, <strong>E. Yi&#287it</strong>, A. G. Feofilov, F. Forget, P. Hartogh (2015), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2015JE004802/full" target="_blank" rel="noopener noreferrer">Cooling of the Martian thermosphere by CO2 radiation and gravity waves: An intercomparison study with two general circulation models</a>, <em><span style="text-decoration: underline;"> J. Geophys. Res. - Planets</span>, 120</em>, doi:10.1002/2015JE004802.</li>
+  <li><strong>Yi&#287it, E. </strong>, and A. S. Medvedev (2015), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science/article/pii/S0273117714007236" target="_blank" rel="noopener noreferrer">Internal wave coupling processes in Earth's atmosphere</a>, <em><span style="text-decoration: underline;"> Adv. Space Res.</span>, 55</em>, doi: 10.1016/j.asr.2014.11.020.</li>
+</ul>
+
+<hr />
+
+<h4>2014</h4>
+<ul>
+  <li><strong>Yi&#287it, E. </strong>, A. S. Medvedev, S. L. England, and T. J. Immel (2014), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2013JA019283/abstract" target="_blank" rel="noopener noreferrer">Simulated variability of the high-latitude thermosphere induced by small-scale gravity waves during a sudden stratospheric warming </a>, <em><span style="text-decoration: underline;">J. Geophys. Res.-Space Phys.</span>, 119,</em> doi: 10.1002/2013JA019283.</li>
+</ul>
+
+<hr />
+
+<h4>2013</h4>
+<ul>
+  <li>Medvedev, A. S., <strong>E. </strong><strong>Yi&#287it</strong>, T. Kurada, P. Hartogh (2013), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/jgre.20163/abstract" target="_blank" rel="noopener noreferrer">General circulation modeling of the Martian upper atmosphere during global dust storms</a>, <em><span style="text-decoration: underline;">J. Geophys. Res.-Planets</span>, 118, 1–13</em>, doi:10.1002/jgre.20163.</li>
+  <li><strong>Yi&#287it, E.</strong>, and A. S. Medvedev (2013), <a class="external" title="[external resource] (New Window)" href="http://link.springer.com/chapter/10.1007%2F978-94-007-4348-9_25" target="_blank" rel="noopener noreferrer">Extending the parameterization of gravity waves into the thermosphere and modeling their effects</a>, <em>in Climate and Weather of the Sun-Earth System (CAWSES)</em>, edited by F.-J. Lübken, Springer Atmospheric Sciences, pp. 467480, <span style="text-decoration: underline;">Springer</span> Netherlands, doi:10.1007/978-94-007-4348-9 25.</li>
+</ul>
+
+<hr />
+
+<h4>2012</h4>
+<ul>
+  <li><strong>Yi&#287it, E.</strong>, and A. S. Medvedev (2012), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012GL053812/abstract" target="_blank" rel="noopener noreferrer">Gravity waves in the thermosphere during a sudden stratospheric warming</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, 39</em>, L21101, doi:10.1029/2012GL053812.</li>
+  <li>Vichare, G., A. J. Ridley, and <strong>E. </strong><strong>Yi&#287it</strong> (2012), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science/article/pii/S1364682612000235" target="_blank" rel="noopener noreferrer">Quiet time ionospheric potential distribution in the non-hydrostatic global ionosphere-thermosphere model</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol-Terr. Phys.</em></span><em>,</em><em> 80</em>, 161-172.</li>
+  <li>Medvedev, A. S., and <strong>E. </strong><strong>Yi&#287it</strong> (2012), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012GL050852/abstract" target="_blank" rel="noopener noreferrer">Thermal effects of internal gravity waves in the Martian upper atmosphere</a>, <span style="text-decoration: underline;"><em>Geophys. Res. Lett</em>.,</span> <em>39</em>, L05201, doi:10.1029/2012GL050852.</li>
+  <li><strong>Yi&#287it, E.</strong>, A. S. Medvedev, A. J. Ridley, A. D. Aylward, M. J. Harris, M. Moldwin, and P. Hartogh (2012), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science/article/pii/S1364682611003178" target="_blank" rel="noopener noreferrer">Dynamical effects of internal gravity waves in the equinoctial thermosphere, </a><span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, 90-91, 104-116.</li>
+  <li>
+<div title="Page 2">
+<div><strong>Yi&#287it, E.</strong>, A. J. Ridley, and M. B. Moldwin (2012),<a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012JA017596/full" target="_blank" rel="noopener noreferrer"> Importance of capturing heliospheric variability for studies of thermospheric vertical winds,</a> <em><span style="text-decoration: underline;">J. Geophys. Res.-Space Phys.</span>, 117,</em> A07306, doi: 10.1029/2012JA017596.</div>
+</div></li>
+</ul>
+
+<hr />
+
+<hr />
+
+
+
+<hr />
+
+<h3 id="toc12" class="toc-anchor">Peer-reviewed Journal Papers (All):</h3>
+<ol>
+<div w3-include-html="publication2018.html"></div> 
+<div w3-include-html="publication2017.html"></div>
+  <li>Kuroda, T., A. S. Medvedev, <strong>E. Yi&#287it</strong>, P. Hartogh (2016), <br /> Global distribution of
+    gravity wave sources and fields in the Martian atmosphere during equinox and solstice inferred from a
+    high-resolution general circulation model, <br />
+    <span style="text-decoration:
+    underline;"><em>J. Atmos. Sci</em></span>, in press.</li>
+  <li><strong>Yi&#287it, E., </strong>A. S. Medvedev (2016), <a href="http://geoscienceletters.springeropen.com/articles/10.1186/s40562-016-0056-1">Role of gravity waves in vertical coupling during sudden stratospheric warmings</a>, Geosci. Lett, 3:27, doi: 10.1186/s40562-016-0056-1.<strong>
+</strong></li>
+  <li>Kilcik, A., A. Ozguc, <strong>E. Yi&#287it</strong>, V. Yurchyshyn, Burcin Donmez (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682616300931">Signature of a possible relationship between the maximum CME speed index and the critical Frequencies of the f1 and f2 Ionospheric Layers: Data Analysis for a Mid-Latitude Ionospheric Station during the Solar Cycles 23 and 24</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, in press.</li>
+  <li>Medvedev, A. S., H. Nakagawa, C. Mockel, <strong>E. Yi&#287it</strong>, T. Kuroda, P. Hartogh, K. Terada, N. Terada, K. Seki, N. M. Schneider, S. K. Jain, J. S. Evans, J. I. Deighan, W.  E. McClintock, D. Lo (2016), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2016GL068388/full">Comparison of the Martian thermospheric density and temperature from IUVS/MAVEN data and general circulation modeling</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, </em>in press.</li>
+  <li>England, S., G. Liu, P. Withers, <strong>E. Yi&#287it</strong>, D. Lo , S. Jain, N. Schneider, J. Deighan, W. McClintock, P. Mahaffy, M. Elrod, M. Benna, B. Jakosky (2016), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2016JE004997/full">Simultaneous observations of atmospheric tides from combined in situ and remote observations at Mars from the MAVEN spacecraft</a>, <em><span style="text-decoration: underline;"> J. Geophys. Res. - Planets</span>, </em>in press.</li>
+  <li><strong>Yi&#287it, E.</strong>, P. K. Knizova, K. Georgieva, W. Ward (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682616300426">A review of vertical coupling in the Atmosphere-Ionosphere system: Effects of waves, sudden stratospheric warmings, space weather, and of solar activity</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, <em>141, 1-12, </em>10.1016/j.jastp.2016.02.011.</li>
+  <li><strong>Yi&#287it, E.</strong>, H. U. Frey, M. B. Moldwin, T. J. Immel, A. J. Ridley (2016), <a href="http://www.sciencedirect.com/science/article/pii/S1364682615300651">Hemispheric difference in the response of the upper atmosphere to the August 2011 geomagnetic storm: A simulation study</a>, <span style="text-decoration: underline;"><em>J. Atmos. Sol.-Terr. Phys.</em></span>, <em>141, 13-26, </em> doi: 10.1016/j.jastp.2015.10.002<span style="color: #000000;"><span style="color: #000000;">.</span></span>
+<ul>
+  <li><span style="font-size: small; color: #888888;">A general circulation model is used to simulate the effects of a major geomagnetic storm on the thermosphere-ionosphere on Earth</span></li>
+  <li><span style="font-size: small; color: #888888;">Advective forcing plays a role in influencing hemispheric asymmetry during the different phases of the storm</span></li>
+</ul>
+</li>
+  <li>Kuroda, T., A. S. Medvedev, <strong>E. Yi&#287it</strong>, P. Hartogh (2015), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL066332/full">A global view of gravity waves in the Martian atmosphere inferred from a high-resolution general circulation model</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, </em>doi:<span class="article-header__meta-info-data">10.1002/2015GL066332.</span>
+<ul>
+  <li><span style="font-size: small; color: #888888;"><span style="font-size: small; color: #888888;">First results of gravity wave simulations with a new high-resolution Martian general circulation model are presented,
+</span></span></li>
+  <li><span style="font-size: small; color: #888888;">Modeled small-scale gravity wave temperature variances are in a good agreement with Mars Global Surveyor radio occultation data.</span></li>
+</ul>
+</li>
+  <li><strong>Yi&#287it, E.</strong>, S. L. England, G. Liu, A. S. Medvedev, P. R. Mahaffy, T. Kuroda, and B. M. Jakosky (2015), <a href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL065307/full">High-altitude gravity waves in the Martian thermosphere observed by MAVEN/NGIMS and modeled by a gravity wave scheme</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, <span class="article-header__meta-info-data">42, </span></em><span class="article-header__meta-info-data">do</span><span class="article-header__meta-info-data">i:0.1002/2015GL065307.</span><em>
+</em></li>
+  <li><strong>Yi&#287it, E., </strong>A. S. Medvedev, and P. Hartogh (2015), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2015GL064275/full" target="_blank" rel="noopener noreferrer"> Gravity waves and high-altitude CO2 ice cloud formation in the Martian atmosphere </a>, <em><span style="text-decoration: underline;"> Geophys. Res. Lett.</span>, 42</em>, doi:10.1002/2015GL064275.
+<ul>
+  <li><span style="font-size: small; color: #888888;">Gravity waves facilitate CO2 ice cloud formation in the upper mesosphere of Mars
+</span></li>
+</ul>
+</li>
+  <li>Medvedev, A. S., F. Gonzales-Galindo, <strong>E. Yi&#287it</strong>, A. G. Feofilov, F. Forget, and P. Hartogh (2015), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2015JE004802/full" target="_blank" rel="noopener noreferrer">Cooling of the Martian thermosphere by CO2 radiation and gravity waves: An intercomparison study with two general circulation models</a>, <em><span style="text-decoration: underline;"> J. Geophysical Res. - Planets</span>, 120</em>, doi:10.1002/2015JE004802.</li>
+  <li><strong>Yi&#287it, E. </strong>, and A. S. Medvedev (2015), Internal wave coupling processes in Earth's atmosphere, <em><span style="text-decoration: underline;"> Adv. Space Res.</span>, 55</em>, doi: 10.1016/j.asr.2014.11.020.
+<ul>
+  <li><span style="color: #999999;">A contemporary review of internal wave processes in Earth's atmosphere, discussing atmospheric variability and sudden stratospheric warming</span></li>
+  <li><span style="color: #999999;">Gravity waves, solar tides, Kelvin waves, and planetary (Rossby) waves are introduced.</span></li>
+</ul>
+</li>
+  <li><strong>Yi&#287it, E. </strong>, A. S. Medvedev, S. L. England, and T. J. Immel (2014), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/2013JA019283/abstract" target="_blank" rel="noopener noreferrer">Simulated variability of the high-latitude thermosphere induced by small-scale gravity waves during a sudden stratospheric warming </a>, <em><span style="text-decoration: underline;">J. Geophys. Res.-Space Phys.</span>, 119,</em> doi: 10.1002/2013JA019283.
+<ul>
+  <li><span style="color: #999999;">GW mean dynamical effects in the high-latitude thermosphere increase by up to a factor of 3 to 6 during the warming. The temporal variability of GW drag increases by more than one order of magnitude, exceeding locally the mean GW drag by more than a factor of two at the peak of the warming.</span></li>
+  <li><span style="color: #999999;">The simulated zonal winds exhibit up to 60% increase of smaller-scale temporal variability</span></li>
+  <li><span style="color: #999999;">Enhanced propagation of subgrid-scale GWs into the high-latitude thermosphere directly affects the temporal variability of resolved motions that have smaller spatial and temporal scales than that of solar tides.</span></li>
+</ul>
+</li>
+  <li>
+<div title="Page 2">
+<div>
+<div>Medvedev, A. S., <strong>E. </strong><strong>Yi&#287it</strong>, T. Kurada, P. Hartogh (2013), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1002/jgre.20163/abstract" target="_blank" rel="noopener noreferrer">General circulation modeling of the Martian upper atmosphere during global dust storms</a>, <em><span style="text-decoration: underline;">J. Geophys. Res.-Planets</span>, 118, 1–13</em>, doi:10.1002/jgre.20163.</div>
+<div>
+<ul>
+  <li>
+<div title="Page 1">
+<div>
+<div><span style="color: #999999;">Simulation of two major dust storms on Mars.</span></div>
+</div>
+</div></li>
+  <li><span style="color: #999999;">Atmospheric density during dust storms enhanced in average by a factor of 2 to 3 in the mesosphere and lower thermosphere.</span></li>
+  <li><span style="color: #999999;">Significant impact of the dust storm on the gravity wave propagation and dissipation</span></li>
+</ul>
+</div>
+</div>
+</div></li>
+  <li><strong>Yi&#287it, E.</strong>, and A. S. Medvedev (2012), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012GL053812/abstract" target="_blank" rel="noopener noreferrer">Gravity waves in the thermosphere during a sudden stratospheric warming</a>, <em><span style="text-decoration: underline;">Geophys. Res. Lett.</span>, 39</em>, L21101, doi:10.1029/2012GL053812.
+<ul>
+  <li><span style="color: #999999;">More fast westerly GW harmonics to penetrate into the lower and upper thermosphere during sudden stratospheric warmings.</span></li>
+  <li><span style="color: #999999;">Towards the end of the warming, the imposed westerly GW drag slows down and even reverses the easterlies in the high-latitude mesosphere and lower thermosphere (MLT).</span></li>
+</ul>
+</li>
+  <li>
+<div title="Page 2">
+<div>
+<div><strong>Yi&#287it, E.</strong>, A. J. Ridley, and M. B. Moldwin (2012),<a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012JA017596/full" target="_blank" rel="noopener noreferrer"> Importance of capturing heliospheric variability for studies of thermospheric vertical winds,</a> <em>J. Geophys. Res.-Space Phys., 117,</em> A07306, doi: 10.1029/2012JA017596.</div>
+</div>
+</div></li>
+  <li>Vichare, G., A. J. Ridley, and <strong>E. </strong><strong>Yi&#287it</strong> (2012), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science/article/pii/S1364682612000235" target="_blank" rel="noopener noreferrer">Quiet time ionospheric potential distribution in the non-hydrostatic global ionosphere-thermosphere model</a>, <em>J. Atmos. Sol-Terr. Phys.</em><em>,</em><em> 80</em>, 161-172.</li>
+  <li>
+<div title="Page 2">Medvedev, A. S., and <strong>E. </strong><strong>Yi&#287it</strong> (2012), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2012GL050852/abstract" target="_blank" rel="noopener noreferrer">Thermal effects of internal gravity waves in the Martian upper atmosphere</a>, <em>Geophys. Res. Lett</em>., <em>39</em>, L05201, doi:10.1029/2012GL050852.</div></li>
+  <li><strong>Yi&#287it, E.</strong>, A. S. Medvedev, A. J. Ridley, A. D. Aylward, M. J. Harris, M. Moldwin, and P. Hartogh (2012), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science/article/pii/S1364682611003178" target="_blank" rel="noopener noreferrer">Dynamical effects of internal gravity waves in the equinoctial thermosphere, </a><em>J. Atmos. Sol.-Terr. Phys.</em>, 90-91, 104-116.</li>
+  <li><strong>Yi&#287it, E. </strong>, A. J. Ridley (2011), <a class="external" title="[external resource] (New Window)" href="http://onlinelibrary.wiley.com/doi/10.1029/2011JA016714/abstract" target="_blank" rel="noopener noreferrer">Role of variability in determining vertical wind speed and variability</a>, <em>J. Geophys. Res.-Space Phys.</em>, <em>116</em>, A12305, doi:10.1029/2011JA016714.
+<ul>
+  <li><span style="color: #999999;">Thermospheric ion flows control the vertical wind variability and speed.</span></li>
+  <li><span style="color: #999999;">Variable ion flows generate enhanced Joule heating that cause nonhydrostatic acceleration of the vertical winds.</span></li>
+</ul>
+</li>
+  <li>Medvedev, A. S., <strong>E. Yi&#287it</strong>, P. Hartogh, E. Becker (2011), <a class="external" title="[external resource] (New Window)" href="http://www.agu.org/pubs/crossref/2011/2011JE003848.shtml" target="_blank" rel="noopener noreferrer">Influence of gravity waves on the Martian atmosphere: General circulation modeling</a>, <em>J. Geophys. Res.-Planets</em>, <em>116</em>, doi:10.1029/2011JE003848.</li>
+  <li>Medvedev, A. S., <strong>E. Yi&#287it</strong>, P. Hartogh (2011), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WGF-51BYSDM-1&amp;_user=10&amp;_coverDate=01%2F31%2F2011&amp;_rdoc=1&amp;_fmt=high&amp;_orig=search&amp;_origin=search&amp;_sort=d&amp;_docanchor=&amp;view=c&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=f7f2abb776a5ac42a2475f5511943dd4&amp;searchtype=a" target="_blank" rel="noopener noreferrer">Estimates of gravity wave drag on Mars: Indication of a possible lower thermospheric wind reversal</a>, <em>Icarus</em>, <em>211</em>, 909-912, doi:10.1016/j.icarus.2010.10.013.
+<ul>
+  <li><span style="color: #999999;">Implementation of the <em>Yi&#287it et al.</em> (2008) gravity wave parameterization into a Martian General Circulation Model.</span></li>
+  <li><span style="color: #999999;">Strong dynamical influence of gravity waves on the Martian circulation between 100 and 130 km.</span></li>
+</ul>
+</li>
+  <li><strong>Yi&#287it, E.</strong>, and A. J. Ridley (2011), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6VHB-51NG4RX-2&amp;_user=10&amp;_coverDate=12%2F09%2F2010&amp;_rdoc=14&amp;_fmt=high&amp;_orig=browse&amp;_origin=browse&amp;_zone=rslt_list_item&amp;_srch=doc-info%28%23toc%236062%239999%23999999999%2399999%23FLA%23display%23Articles%29&amp;_cdi=6062&amp;_sort=d&amp;_docanchor=&amp;_ct=148&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=80811e8689bd1b52d1cdaabeee3d4db3&amp;searchtype=a" target="_blank" rel="noopener noreferrer">Effects of high-latitude thermosphere heating at various scale sizes simulated by a nonhydrostatic global thermosphere ionosphere model</a>, <em>J. Atmos. Sol-Terr. Phys.</em>,<em> 73</em>, 592-600, doi:10.1016/j.jastp.2010.12.003.
+<ul>
+  <li><span style="color: #999999;">Thermospheric Joule heating is simulated at very high resolution with the Global Ionosphere Thermosphere Model</span></li>
+</ul>
+</li>
+  <li><strong>Yi&#287it, E., </strong> and A. S. Medvedev (2010), <a class="external" title="[external resource] (New Window)" href="http://www.agu.org/pubs/crossref/2010/2009JA015106.shtml" target="_blank" rel="noopener noreferrer">Internal gravity waves in the thermosphere during low and high solar activity: Simulation study</a>, <em>J. Geophys. Res.-Space Physics</em>,<em> 115</em>, A00G02, doi:10.1029/2009JA015106.</li>
+  <li>Cnossen, I., M. J. Harris, N. F. Arnold, and <strong>E. Yi&#287it</strong> (2009), <a class="external" title="[external resource] (New Window)" href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6VHB-4TN0M25-1&amp;_user=99318&amp;_coverDate=09%2F30%2F2009&amp;_alid=1616940934&amp;_rdoc=2&amp;_fmt=high&amp;_orig=search&amp;_origin=search&amp;_zone=rslt_list_item&amp;_cdi=6062&amp;_sort=r&amp;_st=13&amp;_docanchor=&amp;view=c&amp;_ct=2&amp;_acct=C000007678&amp;_version=1&amp;_urlVersion=0&amp;_userid=99318&amp;md5=3867b2d49b158a41a12bdf53ee5341be&amp;searchtype=a" target="_blank" rel="noopener noreferrer">Modelled effect of changes in the CO2 concentration on the middle and upper atmosphere: Sensitivity to gravity wave parameterization and absolute concentrations</a>, <em>J. Atmos. Sol-Terr. Phys</em>., 71, 1484–1496.</li>
+  <li><strong>Yi&#287it, E.</strong>, and A. S. Medvedev (2009), <a class="external" title="[external resource] (New Window)" href="http://www.agu.org/pubs/crossref/2009/2009GL038507.shtml" target="_blank" rel="noopener noreferrer">Heating and cooling of the thermosphere by internal gravity waves</a>, <em>Geophys. Res. Lett</em>., 36, L14807, doi:10.1029/2009GL038507.</li>
+  <li><strong>Yi&#287it, E.</strong>, A. S. Medvedev, A. D. Aylward, P. Hartogh, and M. J. Harris (2009), <a class="external" title="[external resource] (New Window)" href="http://www.agu.org/pubs/crossref/2009/2008JD011132.shtml" target="_blank" rel="noopener noreferrer">Modeling the effects of gravity wave momentum deposition on the general circulation above the turbopause</a>, <em>J. Geophys. Res.-Atmospheres</em>,<em> 114</em>, D07101, 14, doi:10.1029/2008JD011132.
+<ul>
+  <li><span style="color: #999999;">Implementation and validation of the <em>Yi&#287it et al.</em> (2008) scheme in a coupled middle atmosphere thermosphere model.</span></li>
+  <li><span style="color: #999999;">Gravity waves penetrate into the thermosphere above the turbopause producing dynamical effects that are comparable to ion drag.</span></li>
+</ul>
+</li>
+  <li><strong>Yi&#287it, E.</strong>, A. D. Aylward, and A. S. Medvedev (2008), <a href="http://onlinelibrary.wiley.com/doi/10.1029/2008JD010135/full">Parameterization of the effects of vertically propagating gravity waves for thermosphere general circulation models: Sensitivity study</a>, <em>J. Geophys. Res.-Atmospheres</em>, <em>113</em>, D19106, doi:10.1029/2008JD010135.
+<ul>
+  <li><span style="color: #999999;">First gravity wave parameterization that is suitable for whole atmosphere general circulation models extending from the lower atmosphere to the upper thermosphere</span></li>
+  <li><span style="color: #999999;">Linear gravity wave parameterization overestimates gravity wave effects, while the nonlinear saturation produces better gravity wave effects.</span></li>
+</ul>
+</li>
+</ol>
+
+<hr />
+
+<h3 id="toc13" class="toc-anchor">PhD Thesis</h3>
+<ol>
+  <li><strong>Yi&#287it, E.</strong> (2009), <a class="external" title="[external resource] (New Window)" href="http://eprints.ucl.ac.uk/17972/" target="_blank" rel="noopener noreferrer"> Modelling atmospheric vertical coupling: role of gravity wave dissipation in the upper atmosphere</a>, UCL PhD Thesis.</li>
+</ol>
+
+<hr />
+
+<h3 id="toc14" class="toc-anchor">Books</h3>
+<ol>
+  <li><strong>Yi&#287it, E.</strong> (2015), <a class="external" title="[external resource] (New Window)" href="http://www.springer.com/us/book/9783319215808#" target="_blank" rel="noopener noreferrer"> Atmospheric and Space Sciences: Neutral Atmospheres, Volume 1 </a>, Springer Briefs in Earth Sciences.   <a class="external" title="[external resource] (New Window)" href="http://www.bookmetrix.com/detail/book/7943200d-43b2-419e-b577-f1db7a128470#downloads" target="_blank" rel="noopener noreferrer">Bookmetrix</a></li>
+  <li><strong>Yi&#287it, E.</strong> (2018), <a class="external" title="[external resource] (New Window)" href="http://www.springer.com/gp/book/9783319620053?wt_mc=ThirdParty.SpringerLink.3.EPR653.About_eBook" target="_blank" rel="noopener noreferrer">Atmospheric and Space Sciences: Ionospheres and Plasma Environments, Volume 2 </a>, Springer Briefs in Earth Sciences.  <a class="external" title="[external resource] (New Window)" href="http://www.bookmetrix.com/detail/book/c9739da5-c751-4c3e-aecf-dea223836f97#downloads" target="_blank" rel="noopener noreferrer">Bookmetrix</a></li>
+</ol>
+
+<hr />
+
+<h3 id="toc15" class="toc-anchor">Book chapter (Peer-reviewed)</h3>
+<ol>
+  <li>
+<div title="Page 2">
+<div>
+<div><strong>Yi&#287it, E.</strong>, and A. S. Medvedev (2013), <a class="external" title="[external resource] (New Window)" href="http://link.springer.com/chapter/10.1007%2F978-94-007-4348-9_25" target="_blank" rel="noopener noreferrer">Extending the parameterization of gravity waves into the thermosphere and modeling their effects</a>, <em>in Climate and Weather of the Sun-Earth System (CAWSES)</em>, edited by F.-J. L�bken, Springer Atmospheric Sciences, pp. 467-480, Springer Netherlands, doi:10.1007/978-94-007-4348-9 25.</div>
+</div>
+</div></li>
+</ol>
+<div></div>
+
+<hr />
+
+<h3 id="toc16" class="toc-anchor">Other Articles</h3>
+<ol>
+  <li><strong>Yi&#287it, E.</strong>, T. Nakamura, C. Stolle, <a href="http://yigit.onair.cc/files/2016/09/VarSITI_Newsletter_Vol10-1.pdf">ROSMIC's Coupling by Dynamics-Working Group</a>, VarSITI Newsletter, 10, p 1.</li>
+  <li><strong>Yi&#287it, E.</strong> (2011), <a href="http://yigit.onair.cc/files/2016/09/Erdal_Yigit_CAWSESII_TG4_newsletter_issue4.pdf">Thermospheric effects of lower atmospheric small-scale gravity waves</a>, CAWSES-II TG4 Newsletter: Highlight on Young Scientists, 4, p. 6.</li>
+</ol>
+
+<hr />
+
+<h3>Publication Lists</h3>
+<ul>
+  <li><a href="http://scholar.google.com/citations?user=e1ZtvyAAAAAJ&amp;hl=en"> Google scholar</a></li>
+  <li><strong><span style="color: #0000ff;"><a style="color: #0000ff;" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=Erdal+Yigit&amp;version=1"> NASA Astrophysics Data System</a></span></strong></li>
+  <li><strong><span style="color: #ff9900;"><a style="color: #ff9900;" href="http://www.researcherid.com/rid/C-8609-2009"> ResearcherID</a></span></strong></li>
+  <li><a href="https://www.researchgate.net/profile/Erdal_Yigit2"> ResearchGate</a></li>
+  <li><strong><span style="color: #99cc00;"><a style="color: #99cc00;" href="http://orcid.org/0000-0002-2819-2521"><span style="color: #808080;">ORC</span>ID</a></span></strong></li>
+
+</ul>
+&nbsp;
+
+<hr />
+
+<h3 id="toc18" class="toc-anchor">Profiles</h3>
+<ul>
+  <li><a class="external" title="[external resource] (New Window)" href="https://www.linkedin.com/pub/erdal-yi%C4%9Fit/33/b2a/310" target="_blank" rel="noopener noreferrer"> LinkedIn </a></li>
+  <li><a href="https://www.facebook.com/erdalyigit80/?ref=aymt_homepage_panel">Facebook</a></li>
+</ul>
+&nbsp;
+
+<hr />
+
+<h3>PhD Thesis supervised</h3>
+<ul>
+  <li> Panka, Peter, Oct 2017, <a href="https://search.proquest.com/docview/2019887483?pq-origsite=gscholar"
+				  target="_blank"> 
+      New non-LTE model of oh and co2 emission in the mesosphere-lower thermosphere and its application
+      to retrieving nighttime parameter</a> (dissertation director) </li>
+  <li> Steven Brown, "The international reference ionosphere and the annual anomaly" (Dissertation director) <br>
+      - not defended yet </li>
+  <li> Suman Dhakal, "Comparative study of super-active active regions and low-active active regions"
+    (Dissertation committee member) <br> 
+      - not defended yet </li>
+  </ul> 
+
+<hr />
+
+
+
+<span id="lastModified"> </span>
+
+
+
+<!-- Commenting this part for future use
+<p>
+If you are interested in pursuing a graduate degree in either <a href="http://spacs.gmu.edu/content/phd-physics">Physics</a> or <a href="http://spacs.gmu.edu/content/phd-computational-sciences-and-informatics">Computational Sciences and Informatics</a> and would like to do research on Space Weather problems, we encourage you to contact any of the <a href="http://aurora.gmu.edu/spaceweather/index.php/Main_Page#People">faculty</a>.
+</p>
+-->
+</span>
+
+<p>
+
+  <br>
+
+
+</td>
+
+  <td style="width: 58px;" valign="top"><span style="font-family: Helvetica,Arial,sans-serif;"><small><br>
+	  
+
+	</td>
+	
+      </td>
+    </tr>
+                          
+  </tbody>
+</table>
+</td>
+  </tr>
+</tbody>
+    
+      
+    
+      
+</table>
+		    </td>
+
+
+
+
+
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+
+<script>
+includeHTML();
+</script>
+</body>
+</html>

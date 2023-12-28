@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Erdal Yi&#287;it's Research</title>
+    <link href="index_files/math.css" rel="stylesheet" type="text/css">
+    <!-- Specify style details, fonts, colors, etc. -->
+    <style>
+      body {
+      font-family: "Lato", sans-serif; font-size: 14px; background-color: GB(240, 240, 240); 
+      width: 800px; margin: 20px; 
+      word-wrap: break-word;
+      }
+
+      li{
+      margin: 1.5px 0;
+      }
+      .space { margin-top: 100px; }       <!-- EY: Create manual space -->
+    </style>
+
+      <!-- EY: Space around the button -->
+    <style>
+      .button {
+      background-color: DodgerBlue; 
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      font-style: italic;
+      font-weight: bold;
+      margin: 2px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      }
+
+      .button1 {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+    </style>
+
+
+<style>
+<!-- body { -->
+<!--   font-family: Arial; -->
+<!--   margin: 0; -->
+<!-- } -->
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+
+	<script>
+	  function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /*loop through a collection of all HTML elements:*/
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+			  elmnt = z[i];
+			  /*search for elements with a certain atrribute:*/
+			  file = elmnt.getAttribute("w3-include-html");
+			  if (file) {
+			  /*make an HTTP request using the attribute value as the file name:*/
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /*remove the attribute, and call this function once more:*/
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			  }
+			  }      
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /*exit the function:*/
+			  return;
+			  }
+			  }
+			  };
+	  </script>
+
+
+
+    <!--This is needed for latex --> 
+    <script type="text/javascript" async
+	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" async
+	    src="https://example.com/mathjax/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+  </head>
+  <body>
+    
+    <!-- THIS IS THE TITLE OF THE PAGE -->
+    <font color="DodgerBlue"> <big><big><big><span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">Erdal Yi&#287;it's Research</span> </big></big></big> </font><br>
+    <hr />
+    
+
+    <!-- MAIN TEXT STARTS HERE -->
+    <h3>Main Research Interests</h3>
+    <ul> 
+      <!-- I would say create a separate in-page link for each topic --> 
+      <li> <a href="#GWs"> Gravity waves in planetary atmospheres </a></li>
+      <li>  Whole atmosphere coupling  </li>
+      <li> General circulation modeling </li>
+      <li> Dynamics of planetary atmospheres</li>
+      <li> Space weather        </li>
+    </ul>
+   
+   <!-- <font color="DodgerBlue"> ...Soon I will discuss these research topics in detail... </font><br /> -->
+
+    <a name="GWs">
+   <h4>Gravity waves in planetary atmospheres</h4> Internal gravity waves are present in all planetary atmospheres
+   studied in the Solar System. They are produced in the lower atmosphere and can propagate into the upper
+   atmosphere. General circulation models have coarse grid resolution so they have to include gravity wave
+   parameterizations. I have developed a whole atmosphere gravity wave parameterization, which represents the
+   propagation and dissipation of gravity wave effect in the entire atmosphere.
+
+   
+   <!-- This is the right place to introduce the scheme and example plots and data -->
+
+
+   <hr>
+    <h3>Some Highlights and Media</h3>
+    <ul> 
+      <li> <a href="https://www2.gmu.edu/news/183866" target="_blank" > 
+	  Satellite data helps Mason physicist study gravity waves in Mars' upper atmosphere </a>, 
+	News at Mason, 2016.
+      </li>
+      <li> <a href="http://studentsasscholarsgmu.blogspot.com/2015/06/fws-research-assistant-highlights_4.html" target="_blank"> 
+	  Students as Scholar Research Assistant Highlights</a>, 
+	George Mason University, 2015, USA. </li>
+      <li> <a href="http://clasp.engin.umich.edu/articles/view/181#.W8LbExNKhTY" target="_blank">  
+	  Erdal Yi&#287;it - Highlight on Young Scientist</a>, 
+	University of Michigan, 2011 </li>
+  </ul>
+
+    <hr>
+    <h3> Upcoming events</h3>
+    <ul> 
+      <li> American Geophysical Union, Washington DC -- 
+	<a href= "https://agu.confex.com/agu/fm18/prelim.cgi/Session/61543" target="_blank"> 
+	  SA42A: Progress in Whole Atmosphere Coupling Studies </br>
+	</a>
+      <ul>
+	<li> Oral:    Thursday, 13 December 2018,  10:20-12:20 Convention Ctr - 202B
+	<li> Posters: Friday, 14 December 2018,  8:00-12:20 Convention Ctr - Hall A-C (Poster Hall)
+	<li> My abstracts:
+	  <ul>
+	    <li> P43K-3906 Comparing MAVEN/NGIMS Thermospheric Wind Observations with M-GITM Simulations
+	    <li> SA42A-08 Variation of small scale gravity wave activity in the ionosphere during a major sudden
+	    stratospheric warming event of 2009
+	    <li> SA51B-2730 Climatology of gravity wave activity in the middle atmosphere as simulated by a whole
+	    atmosphere gravity wave parameterization in a GCM and as observed by SABER/TIMED.
+	  </ul>
+      </ul>
+      </li>
+    </ul>
+
+
+
+    <hr>
+    <h3> Other interesting topics</h3>
+    <ul> 
+      <li> Are you curious about the selection rates of NASA proposals? Check this out:
+	<a href= "https://science.nasa.gov/researchers/sara/grant-stats/a-plot-of-grades-vs-who-gets-selected" 
+	   target="_blank"> 
+	  Plots of grades vs. who gets selected </br>
+	</a>
+      </li>
+    </ul>
+
+
+
+
+   <font color="DodgerBlue"> ...More to come... </font>
+   <div class="space"></div> 
+   <a href="http://www.spaceweather.gmu.edu/eyigit/" class="button button1">Go to main page</a>
+
+
+
+
+
+
+
+
+
+<!-- <div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">TeX-MML-AM_CHTML</span></code> configuration is one of the most general (and
+thus largest) combined configuration files.  We list it here because it
+will quickly get you started using MathJax.  It is probably not the most
+efficient configuration for your purposes and other <a class="reference internal" href="config-files.html#common-configurations"><span class="std std-ref">combined
+configuration files</span></a> are available.  You can also
+provide additional configuration parameters to tailor one of the combined
+configurations to your needs or use our development tools to generate
+your own combined configuration file.</p>
+<p class="last">More details about the configuration process can be found in the
+<a class="reference internal" href="configuration.html#loading"><span class="std std-ref">Loading and Configuring MathJax</span></a> instructions.</p>
+</div>
+-->
+<!--
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+-->
+
+
+
+
+
+
+
+
+
+
+<!-- <h2 style="text-align:center">Research Gallery</h2> -->
+
+<!-- <div class="container"> -->
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">1 / 6</div> -->
+<!--     <img src="./Images/gw.png" style="width:50%"> -->
+<!--   </div> -->
+
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">2 / 6</div> -->
+<!--     <img src="./Images/Zeldovichwebsite.png" style="width:100%"> -->
+<!--   </div> -->
+
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">3 / 6</div> -->
+<!--     <img src="img_mountains_wide.jpg" style="width:100%"> -->
+<!--   </div> -->
+    
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">4 / 6</div> -->
+<!--     <img src="img_lights_wide.jpg" style="width:100%"> -->
+<!--   </div> -->
+
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">5 / 6</div> -->
+<!--     <img src="img_nature_wide.jpg" style="width:100%"> -->
+<!--   </div> -->
+    
+<!--   <div class="mySlides"> -->
+<!--     <div class="numbertext">6 / 6</div> -->
+<!--     <img src="img_snow_wide.jpg" style="width:100%"> -->
+<!--   </div> -->
+    
+<!--   <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+<!--   <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+<!--   <div class="caption-container"> -->
+<!--     <p id="caption"></p> -->
+<!--   </div> -->
+
+<!--   <div class="row"> -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="./Images/gw.png" style="width:50%" onclick="currentSlide(1)" alt="The Woods"> -->
+<!--     </div> -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="./Images/Zeldovichwebsite.png" style="width:100%" onclick="currentSlide(2)" alt="Zeldovich medal"> -->
+<!--     </div> -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords"> -->
+<!--     </div> -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights"> -->
+<!--     </div> -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise"> -->
+<!--     </div>     -->
+<!--     <div class="column"> -->
+<!--       <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains"> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
+
+<!-- <script> -->
+<!-- var slideIndex = 1; -->
+<!-- showSlides(slideIndex); -->
+
+<!-- function plusSlides(n) { -->
+<!--   showSlides(slideIndex += n); -->
+<!-- } -->
+
+<!-- function currentSlide(n) { -->
+<!--   showSlides(slideIndex = n); -->
+<!-- } -->
+
+<!-- function showSlides(n) { -->
+<!--   var i; -->
+<!--   var slides = document.getElementsByClassName("mySlides"); -->
+<!--   var dots = document.getElementsByClassName("demo"); -->
+<!--   var captionText = document.getElementById("caption"); -->
+<!--   if (n > slides.length) {slideIndex = 1} -->
+<!--   if (n < 1) {slideIndex = slides.length} -->
+<!--   for (i = 0; i < slides.length; i++) { -->
+<!--       slides[i].style.display = "none"; -->
+<!--   } -->
+<!--   for (i = 0; i < dots.length; i++) { -->
+<!--       dots[i].className = dots[i].className.replace(" active", ""); -->
+<!--   } -->
+<!--   slides[slideIndex-1].style.display = "block"; -->
+<!--   dots[slideIndex-1].className += " active"; -->
+<!--   captionText.innerHTML = dots[slideIndex-1].alt; -->
+<!-- } -->
+<!-- </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
